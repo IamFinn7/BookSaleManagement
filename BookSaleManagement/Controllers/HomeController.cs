@@ -17,6 +17,5 @@ namespace BookSaleManagement.Controllers
             return View();
         }
 
-       
     }
 }

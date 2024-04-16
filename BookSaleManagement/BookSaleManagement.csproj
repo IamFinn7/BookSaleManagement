@@ -1893,7 +1893,6 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Book\OutStandingBooks.cshtml" />
     <Content Include="Views\Layout\UserLayout.cshtml" />
     <Content Include="Views\Component\Navbar.cshtml" />
     <Content Include="Views\Category\CategoryPartial.cshtml" />
