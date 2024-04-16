@@ -1,0 +1,62 @@
+﻿@using BookSaleManagement.Models;
+@model List<Sach>
+
+<div class="job_container">
+    <h4 class="job_heading">
+        Sách mới nổi bật
+    </h4>
+    <div class="row">
+        @{ foreach (var item in Model)
+            {
+                <div class="col-lg-3">
+                    <a href="#" class="buy_book">
+                        <div class="box">
+                            <div class="job_content-box">
+                                <div class="img-box">
+                                    <img src="https://product.hstatic.net/200000845405/product/noi_23d3b42f6f6c41d99fee08c6c619efcb_master.png" alt="">
+                                </div>
+                                <div class="detail-info">
+                                    <div class="detail-name">
+                                        <span>
+                                            @item.TenSach
+                                        </span>
+                                    </div>
+                                    <div class="detail-price">
+                                        <span style="font-weight:600;font-size: 15px; color: red">
+                                            @item.GiaBan ₫
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            }
+        }
+
+
+        @*<div class="col-lg-3">
+            <a href="#" class="buy_book">
+                <div class="box">
+                    <div class="job_content-box">
+                        <div class="img-box">
+                            <img src="https://product.hstatic.net/200000845405/product/3_0a107f897d5f4f1bb9f275d612c7862f_master.png" alt="">
+                        </div>
+                        <div class="detail-info">
+                            <div class="detail-name">
+                                <span>
+                                    Cuộc Nổi Dậy Của Cô Nàng Mọt Sách – Phần 1: Con Gái Của Người Lính III
+                                </span>
+                            </div>
+                            <div class="detail-price">
+                                <span>
+                                    171,000 ₫
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>*@
+    </div>
+</div>
