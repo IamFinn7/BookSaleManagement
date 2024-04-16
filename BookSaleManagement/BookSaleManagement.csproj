@@ -1896,6 +1896,7 @@
     <Content Include="Views\Layout\UserLayout.cshtml" />
     <Content Include="Views\Component\Navbar.cshtml" />
     <Content Include="Views\Category\CategoryPartial.cshtml" />
+    <Content Include="Views\Book\OutStandingBooks.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
