@@ -1,0 +1,28 @@
+﻿
+@using BookSaleManagement.Models;
+@model List<ChuDe>
+
+
+<section class="category_section">
+    <div class="container-fluid">
+        <div class="heading_container heading_center">
+            <h2 style="margin: 20px 0 10px 0">
+                DANH MỤC
+            </h2>
+        </div>
+        <div class="row">
+            @foreach (var item in Model)
+            {
+                <div class="col-3">
+                    <a href="#" class="box">
+                        <div class="detail-box">
+                            <span>
+                                @item.TenChuDe
+                            </span>
+                        </div>
+                    </a>
+                </div>
+            }
+        </div>
+        </div>
+</section>
