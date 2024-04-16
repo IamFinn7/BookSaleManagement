@@ -6,7 +6,7 @@
     <title>@ViewBag.Title</title>
 
     <!-- bootstrap core css -->
-    <link rel="stylesheet" type="text/css" href="~/Content/cssUserLayout/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="~/Content/cssUserLayout/bootstrap.css" />
 
     <!-- fonts style -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,6 +29,7 @@
     @RenderBody()
     <div class="hero_area">
         <!-- header section strats -->
+        @Html.Partial("~/Views/Component/Navbar.cshtml")
         <!-- end header section -->
         <!-- slider section -->
         <section class="slider_section ">
@@ -87,8 +88,8 @@
     </div>
 
     <!-- category section -->
+    @Html.Action("CategoryPartial", "Category")
     <!-- end category section -->
-
     <!-- about section -->
     @* <section class="about_section layout_padding">
             <div class="container">
@@ -232,8 +233,9 @@
     <!-- job section -->
     <section class="job_section layout_padding">
         <div class="container">
-            @*Insert OutStandingBooks partial*@ 
-           
+            @*Insert OutStandingBooks partial*@
+            @Html.Action("OutStandingBooks", "Book")
+
             @* <div class="job_container">
                     <h4 class="job_heading">
                         Recent Jobs
